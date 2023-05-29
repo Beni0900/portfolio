@@ -1,0 +1,91 @@
+.currentMoneyContainer {
+    height: 100%;
+    background-color: #161B25;
+    flex: 1;
+    overflow: auto;
+}
+.cardContainer {
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+.cardNear {
+    background-color: #0E1419;
+    border: 0.15rem solid #09a009;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin: 0.8rem;
+    position: relative;
+}
+.card {
+    background-color: #0E1419;
+    border: 0.15rem solid #BC1233;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    margin: 0.8rem;
+    position: relative;
+}
+.currentMoneyIconNear {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #09a009;
+    -webkit-box-shadow: 6px 28px 50px 31px #09a00957; 
+    box-shadow: 6px 28px 50px 31px #09a00957;
+}
+.currentMoneyIcon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BC1233;
+    -webkit-box-shadow: 6px 28px 50px 31px #bc123462; 
+    box-shadow: 6px 28px 50px 31px #bc123462;
+}
+.cardData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center
+}
+.inputContainer {
+    margin: 0 auto;
+    margin-top: 10rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttonDes {
+    width: 14rem;
+    height: 45px;
+    background-color: #090d11 !important;
+    outline: none;
+    border: none;
+    background: linear-gradient(#e4e4e4 0 0) bottom /var(--d, 0) 0.1rem no-repeat;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}

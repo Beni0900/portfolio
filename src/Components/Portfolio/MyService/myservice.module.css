@@ -1,0 +1,76 @@
+
+/* my Service section */
+.myService {
+    margin: 10rem auto 0 auto;
+    width: 100%;
+    color: #D4D5D5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-bottom: 10rem; */
+    background-color: #141b25b9;
+    padding: 8rem 3rem 8rem 3rem;
+}
+.myService h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+.myService p {
+    font-size: 1.2rem;
+}
+.myService .leftSection {
+    width: 20%;
+
+}
+.myService .rightSection {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.myService .buttonSection {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 1rem;
+}
+.rightSection .card {
+    height: 19rem;
+    width: 18rem;
+    background-color: black !important;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 0.3rem;
+    transition:0.3s;
+    margin: 1rem;
+    background: linear-gradient(rgba(16,111,244,1) 0 0) bottom /var(--d, 0) 0.2rem no-repeat;
+}
+.rightSection .card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.rightSection .card p {
+    font-size: 1rem;
+}
+.myService .rightSection .card:hover {
+    --d: 100%;
+    cursor: pointer;
+}
+@media (max-width: 950px) {
+    .myService {
+        flex-direction: column;
+    }
+    .myService .leftSection {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .myService .rightSection {
+        width: 100%;
+    }
+}

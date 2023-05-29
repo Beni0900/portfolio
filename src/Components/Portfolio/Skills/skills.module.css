@@ -1,0 +1,91 @@
+.internalSkills {
+    margin: 10rem auto 0 auto;
+    width: 100%;
+    color: #D4D5D5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141b25b9;
+    position: relative;
+}
+.internalSkills:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+    background-image: url('../../../assets/skills.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    z-index: 1;
+}
+.internalSkills .headerSection {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    color: white;
+    font-weight: 700;
+    padding-left: 1.5rem;
+    font-size: 3rem;
+}
+.skillsSection {
+    width: 70%;
+    height: auto;
+    background-color: #141b25b9;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 5rem 0 5rem 0;
+    border-radius: 1rem;
+    -webkit-box-shadow: 1px 3px 35px 6px #000000; 
+    box-shadow: 1px 3px 35px 6px #000000;
+}
+.skillContainer {
+    width: 50%;
+    height: 33.3%;
+    padding: 2rem;
+}
+.skillContainer h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+.skillContainer .progressBar {
+    width: 100%;
+    height: 1.3rem;
+    background-color: black;
+    margin-top: 1rem;
+    border-radius: 1rem;
+}
+.skillContainer .progressLine {
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 700;
+}
+@media (max-width: 730px) {
+    .skillsSection {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .skillContainer {
+        width: 90%;
+    }
+}
+@media (max-width: 500px) {
+    .headerSection h3 {
+        font-size: 1.5rem;
+    }
+}
