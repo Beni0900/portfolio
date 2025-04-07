@@ -1,9 +1,0 @@
-.calenderContainer {
-    height: 100%;
-    background-color: #161B25;
-    flex: 1;
-    overflow: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}

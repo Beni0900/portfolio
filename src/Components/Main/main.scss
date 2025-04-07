@@ -1,0 +1,105 @@
+.main {
+  margin: 0 auto;
+  padding-top: 10rem;
+  width: 80%;
+  min-height: 50vh;
+  color: #d4d5d5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  h2 {
+    font-size: 2.8rem;
+    color: #d4d5d5;
+    margin-bottom: 2rem;
+    font-family: Basis;
+
+    @media (max-width: 800px) {
+      font-size: 1.8rem;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 4.8vmin;
+    }
+  }
+
+  p {
+    font-weight: 700;
+    width: 50%;
+    margin-bottom: 2rem;
+    font-family: Lotion;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      font-size: 1rem;
+    }
+  }
+
+  .desPicContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+      border-radius: 50%;
+      height: 14rem;
+      width: 14rem;
+
+      @media (max-width: 500px) {
+        display: none;
+      }
+
+      @media (min-width: 1000px) {
+        margin-left: 5rem;
+      }
+
+      @media (min-width: 1200px) {
+        margin-left: 5rem;
+        border-radius: 10%;
+        height: 22rem;
+        width: 22rem;
+        position: absolute;
+        right: 0.5rem;
+      }
+
+      @media (min-width: 1300px) {
+        margin-left: 5rem;
+        border-radius: 10%;
+        height: 22rem;
+        width: 22rem;
+        position: absolute;
+        right: 5rem;
+      }
+    }
+
+    @media (min-width: 1300px) {
+      margin: 3rem 0;
+    }
+
+    @media (min-width: 1000px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 500px) {
+      p {
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 0.7em;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

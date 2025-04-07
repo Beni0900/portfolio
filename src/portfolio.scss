@@ -1,0 +1,82 @@
+:root {
+  --d: 0%;
+}
+
+.portfolio {
+  background-color: black;
+  width: 100vw;
+  background-image: url("./assets/port_back.svg");
+}
+
+.goUp {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #125ff3;
+  transition: 0.5s;
+  z-index: 99999;
+}
+
+.goUp:hover {
+  cursor: pointer;
+  background-color: #0848bd;
+}
+
+.separator {
+  height: auto;
+  width: 100vw;
+  border-radius: 0;
+}
+
+.designedLink {
+  display: inline-block;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  background: linear-gradient(to right, rgb(0, 60, 255), rgb(0, 0, 0));
+  /* background: linear-gradient(to right, #03b8fa, #135ef3); */
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s;
+  z-index: 11;
+  overflow: hidden;
+  font-size: 18px;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    height: 100%;
+    left: -28%;
+    width: 0%;
+    background: white;
+    /* background: rgb(122, 122, 122); */
+    transform: skew(50deg);
+    transition-duration: 0.6s;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #093999;
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    width: 180%;
+  }
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}

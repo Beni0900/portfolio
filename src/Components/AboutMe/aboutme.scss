@@ -1,0 +1,158 @@
+.aboutMe {
+  margin: 10rem auto 0 auto;
+  width: 80%;
+  height: auto;
+  color: #d4d5d5;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Basis;
+  }
+
+  p {
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-family: Lotion;
+  }
+
+  .leftSection {
+    width: 50%;
+    height: 100%;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .box {
+      align-self: flex-end;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      background: rgb(16, 111, 244);
+      background: linear-gradient(
+        0deg,
+        rgba(16, 111, 244, 1) 0%,
+        rgb(57, 66, 69) 100%
+      );
+      height: 7rem;
+      transform-origin: bottom;
+      width: 9rem;
+      z-index: 0;
+      position: absolute;
+      bottom: -4rem;
+      right: 5vw;
+      border-radius: 0.3rem;
+
+      &.bounce {
+        animation-name: bounce;
+        animation-timing-function: linear;
+      }
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      border-radius: 1rem;
+      width: 22rem;
+    }
+  }
+
+  .rightSection {
+    width: 50%;
+    margin-left: 2rem;
+
+    .buttonContainer {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+
+      .buttonDesign {
+        display: inline-block;
+        margin: 0 5px;
+        height: 3rem;
+        width: 15rem;
+        background: linear-gradient(to right, rgb(0, 60, 255), rgb(0, 0, 0));
+        color: #fff;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 0.3rem;
+        position: relative;
+        transition: 0.5s;
+        z-index: 1;
+        overflow: hidden;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: Lotion;
+
+        &:before {
+          position: absolute;
+          content: "";
+          top: 0px;
+          height: 100%;
+          left: -28%;
+          width: 0%;
+          background: white;
+          transform: skew(50deg);
+          transition-duration: 0.6s;
+          z-index: -1;
+        }
+
+        &:hover {
+          color: #093999;
+        }
+
+        &:hover::before {
+          width: 180%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
+
+    .leftSection {
+      width: 100%;
+      margin: 0;
+    }
+
+    .rightSection {
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1290px) {
+  .box {
+    right: 2vmin;
+  }
+}
+
+@media (max-width: 1100px) {
+  .box {
+    right: -4vmin;
+  }
+}

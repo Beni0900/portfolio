@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  width: 100vw;
+  display: flex;
+}
+
+#root {
+  width: 100vw;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.react-viewer {
+  position: relative;
+  z-index: 9999999;
+}

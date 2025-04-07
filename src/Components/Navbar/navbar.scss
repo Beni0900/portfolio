@@ -1,0 +1,116 @@
+.navBarContainerInPort {
+  width: 100%;
+  height: 8%;
+  background-color: rgba(0, 0, 0, 0.729);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e0e0e1;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  z-index: 99999999;
+}
+
+.leftOptions {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+
+  & p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Basis;
+  }
+
+  & p:hover {
+    cursor: default;
+  }
+
+  & img {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+  }
+}
+
+.rightOptions {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & p {
+    font-size: 1.2rem;
+    font-family: Basis;
+    margin: 0 2rem;
+    transition: 0.3s;
+    padding-bottom: 0.3rem;
+    background: linear-gradient(rgb(255, 255, 255) 0 0) bottom / var(--d, 0)
+      0.2vmin no-repeat;
+
+    &:hover {
+      cursor: pointer;
+      --d: 100%;
+    }
+  }
+}
+
+.navIcon {
+  border-radius: 10%;
+  display: none;
+  padding: 0.7rem;
+  background-color: rgb(52, 52, 52);
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(77, 77, 77);
+  }
+}
+
+.optionsContainer {
+  position: absolute;
+  right: 0;
+  top: 4.5rem;
+  width: 15rem;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.729);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  opacity: 1;
+  transition: visibility 0s linear 0s, opacity 0.5s;
+
+  & p {
+    margin: 1rem 0;
+    margin-left: 3rem;
+    transition: 0.3s;
+    font-family: Basis;
+    font-size: 1.2rem;
+    background: linear-gradient(rgb(255, 255, 255) 0 0) bottom / var(--d, 0)
+      0.2vmin no-repeat;
+
+    &:hover {
+      cursor: pointer;
+      --d: 100%;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .rightOptions {
+    display: none;
+  }
+
+  .navIcon {
+    display: block;
+    margin-right: 2rem;
+  }
+
+  .leftOptions {
+    width: 15%;
+    margin-left: 3rem;
+  }
+}
