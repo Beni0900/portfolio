@@ -213,7 +213,7 @@ export const MyWork = () => {
                     </>
                   ) : (
                     <>
-                      <RiLinksFill /> check it out
+                      <RiLinksFill /> check it
                     </>
                   )}
                 </a>
