@@ -139,7 +139,7 @@ export const MyWork = () => {
 
   const images = selectedProject?.imgs
     ? selectedProject.imgs.map((img: string) => ({
-        src: "/projects/" + img,
+        src: `${import.meta.env.BASE_URL}projects/` + img,
         alt: selectedProject.label,
       }))
     : [];
