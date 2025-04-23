@@ -48,7 +48,7 @@ export const MyWork = () => {
     {
       label: "Recipe book",
       category: ["react", "web"],
-      link: "https://youtu.be/HxPsbwMGgYw",
+      link: "https://github.com/Beni0900/recipe_book",
     },
     {
       label: "NW - Hud_v3 (UI)",
