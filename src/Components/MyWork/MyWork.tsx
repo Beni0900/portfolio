@@ -46,6 +46,11 @@ export const MyWork = () => {
       link: "https://youtu.be/HxPsbwMGgYw",
     },
     {
+      label: "Recipe book",
+      category: ["react", "web"],
+      link: "https://youtu.be/HxPsbwMGgYw",
+    },
+    {
       label: "NW - Hud_v3 (UI)",
       category: ["fivem", "react"],
       imgs: ["nw/hud/hud_v3.png", "nw/hud/hud_v2.png"],
