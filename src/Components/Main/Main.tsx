@@ -21,7 +21,7 @@ const Main = () => {
         <Typewriter
           words={[
             "Hello, ",
-            "Hello, I`m Darabos Benjamin!",
+            "Hello, I`m Benjamin Darabos!",
             "Full-Stack Developer",
             "FiveM server Developer",
           ]}

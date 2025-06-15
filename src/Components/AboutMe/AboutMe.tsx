@@ -10,7 +10,7 @@ const AboutMe = () => {
         <div className="box bounce"></div>
       </div>
       <div className="rightSection">
-        <h3>I'am Darabos Benjamin</h3>
+        <h3>I'am Benjamin Darabos</h3>
         <p>
           I began my journey in development back in 2019-2020, initially
           focusing on FiveM scripts. These early projects taught me the
