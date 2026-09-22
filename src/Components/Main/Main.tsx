@@ -1,7 +1,7 @@
-import { Typewriter } from "react-simple-typewriter";
-import "./main.scss";
-import profPicture from "../../assets/profilkep.jpg";
 import { FaDiscord, FaFacebook, FaGithub, FaInstagram } from "react-icons/fa";
+import { Typewriter } from "react-simple-typewriter";
+import profPicture from "../../assets/profilkep.jpg";
+import "./main.scss";
 import { Link } from "./types/link";
 
 const Main = () => {
@@ -33,7 +33,7 @@ const Main = () => {
       </h2>
       <div className="desPicContainer">
         <p>
-          I am a 20-year-old university student living in Győr, Hungary. In my
+          I am a 21-year-old university student living in Győr, Hungary. In my
           free time, I enjoy playing the guitar and spending time with my two
           huskies, who are a big part of my life. I am currently pursuing a
           degree in software and computer engineering and I am in my second
